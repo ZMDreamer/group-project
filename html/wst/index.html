@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ZEALER FIX</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .banner {
+            width: 100%;
+            height: 60px;
+            background-color: rgba(255, 255, 255, 0.9);
+            z-index: 100;
+            position: fixed;
+        }
+
+        .w {
+            width: 1120px;
+            height: 60px;
+            margin: 0 auto;
+            /* background-color: skyblue; */
+        }
+
+        .w .logo {
+            width: 175px;
+            height: 60px;
+            line-height: 70px;
+            float: left;
+        }
+
+        .nav {
+            width: 700px;
+            height: 60px;
+            float: left;
+            position: relative;
+        }
+
+        .nav .clode {
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 88px;
+            height: 60px;
+            background: url(images/cloud.gif) no-repeat;
+            opacity: 0.7;
+        }
+
+        .nav li {
+            float: left;
+            line-height: 60px;
+            font-size: 16px;
+            width: 88px;
+        }
+
+        .nav li a {
+            color: #666666;
+            font-weight: 600;
+        }
+
+        .nav li a:hover {
+            color: #05AE6A;
+        }
+
+        .navRight {
+            width: 100px;
+            height: 60px;
+            /* background-color:yellow; */
+            float: right;
+        }
+
+        .navRight a {
+            float: right;
+            line-height: 60px;
+            font-size: 14px;
+            margin-left: 14px;
+            color: #666666;
+        }
+
+        .navRight a:hover {
+            color: #05AE6A;
+        }
+
+        .bg {
+            width: 100%;
+            height: 500px;
+            background-color: skyblue;
+        }
+
+        #img2 {
+            display: none;
+        }
+
+        .content {
+            width: 1120px;
+            height: 90px;
+            margin: 0 auto;
+            margin-top: 30px;
+            margin-bottom:20px ;
+            background-color: skyblue;
+            position: relative;
+            
+        }
+
+        .content li {
+            width: 224px;
+            height: 90px;
+            background-color: #fff;
+            float: left;
+            position: relative;
+            text-align: center;
+            border: 1px solid #e2e5e7;
+            border-right: none;
+            box-sizing: border-box;
+        }
+        .content li:last-child{
+            border-right: 1px solid #e2e5e7;
+        }
+        .content li a{
+            display: block;
+        }
+        .content li a:hover p{
+            color: #05AE6A; 
+        }
+        .content li p {
+            display: block;
+            color: #a1a4a8;
+        }
+        .content li b {
+            margin-top: 15px;
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            background: url(images/jlt.png) no-repeat -6px -6px;
+        }
+        .content li a:first-child:hover b{
+            background: url(images/jlt.png) no-repeat -6px -56px;
+        }
+        .content li:nth-child(2) b {
+            background:url(images/jlt.png) no-repeat -6px -105px;
+        }
+        .content li:nth-child(2) a:hover b{
+            background:url(images/jlt.png) no-repeat -6px -155px;
+        }
+        .content li:nth-child(3) b {
+            background:url(images/jlt.png) no-repeat -5px -205px;
+        }
+        .content li:nth-child(3) a:hover b {
+            background:url(images/jlt.png) no-repeat -5px -255px;
+        }
+        .content li:nth-child(4) b{
+            width: 49px;
+            height: 41px;
+            background:url(images/jlt.png) no-repeat 0 -305px;
+        }
+        .content li:nth-child(4) a:hover b{
+            background:url(images/jlt.png) no-repeat 0 -355px;
+        }
+        .content li:nth-child(5) b {
+            width: 49px;
+            height: 39px;
+            background:url(images/jlt.png) no-repeat -2px -405px;
+        }
+        .content li:nth-child(5) a:hover b{
+            background:url(images/jlt.png) no-repeat -2px -455px;
+        }
+        .content  li .left{
+            /* width: 112px; */
+            height: 2px;
+            position: absolute;
+            background-color:  #05AE6A;
+            bottom: -1px;
+            left: 111px;
+        }
+        .content li .right{
+            /* width: 112px; */
+            height: 2px;
+            position: absolute;
+            background-color:  #05AE6A;
+            bottom: -1px;
+            right: 111px;
+            
+        }
+        .main {
+            height: 630px;
+            background-color: #f7f7f7;
+        }
+        .main .tp {
+            width: 1120px;
+            height: 630px;
+            margin: 0 auto;
+            margin-top: 10px;
+            background-color: #f7f7f7;
+        }
+
+        .main .tp a {
+            float: left;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+
+        .main .tp a:nth-child(2n) {
+            margin-right: 0px;
+            margin-bottom: 0px;
+        }
+
+        .main .tp img:nth-child(3) {
+            margin-bottom: 0px;
+        }
+
+        .main .tp img {
+            transition: all 1s;
+        }
+
+        .main .tp img:hover {
+            transform: scale(1.1);
+        }
+
+        .foot {
+            height: 298px;
+            margin-top: 200px;
+            background-color: #131313;
+            overflow: hidden;
+        }
+
+        .foot-l {
+            width: 500px;
+            height: 150px;
+            margin-top: 65px;
+            margin-left: 150px;
+            /* background-color: yellow; */
+            float: left;
+        }
+
+        .foot-l dl {
+            width: 164px;
+            float: left;
+        }
+
+        .foot-l dt {
+            height: 40px;
+            font-size: 16px;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        .foot-l dd {
+            height: 28px;
+            font-size: 14px;
+            color: #666666;
+            margin-left: 4px;
+        }
+
+        .foot-z {
+            width: 230px;
+            height: 178px;
+            /* background-color: skyblue; */
+            float: left;
+            margin-left: 60px;
+        }
+
+        .zx {
+            width: 110px;
+            height: 30px;
+            background-color: #18B174;
+            margin: 80px 54px 23px;
+            border-radius: 4px;
+            text-align: center;
+            line-height: 30px;
+            font-size: 14px;
+        }
+
+        .zx img {
+            vertical-align: middle;
+        }
+
+        .zx span {
+            color: #ffffff;
+        }
+
+        .foot-z p {
+            height: 29px;
+            font-size: 14px;
+            color: #666666;
+        }
+
+        .foot-z .ss {
+            font-size: 16px;
+        }
+
+        .foot-r {
+            width: 300px;
+            height: 200px;
+            /* background-color: yellow; */
+            float: left;
+            margin-top: 54px;
+            position: relative;
+        }
+
+        .foot-r img {
+            width: 92px;
+            height: 92px;
+            padding: 4px;
+            background-color: #fff;
+            border-radius: 4px;
+
+        }
+
+        .foot-r .tp {
+            margin-right: 25px;
+        }
+
+        .foot-r span {
+            color: #ffffff;
+            font-size: 14px;
+            position: absolute;
+            top: 102px;
+            left: 25px;
+        }
+
+        .foot-r .gf {
+            position: absolute;
+            top: 102px;
+            left: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="w">
+            <div class="logo">
+                <a href="javascript:void(0)">
+                    <img src="images/logo.png" alt="">
+                </a>
+            </div>
+            <div class="nav">
+                    <a href="../zm/productsShow.html"><span class="clode"></span></a>
+                <ul>
+                    <li>
+                        <a href="javascript:;">享用分期</a>
+                    </li>
+                    <li>
+                        <a href="../wjy/weixiu.html">维修服务</a>
+                    </li>
+                    <li>
+                        <a href="../wjy/weixiu2.html">客户服务</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">支持花呗</a>
+                    </li>
+                    <li>
+                        <a href="../zm/productsShow.html">技术流弊</a>
+                    </li>
+                    <li>
+                        <a href="../wjy/weixiu2.html">服务到位</a>
+                    </li>
+                    <li>
+                        <a href="../../index.html">返回首页</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navRight">
+                <a href="../J-zealer-pxy/login-index.html">注册</a>
+                <a href="../J-zealer-pxy/login-index.html">登录</a>
+            </div>
+        </div>
+    </div>
+    <div class="bg">
+        <a href="javascript:void(0)">
+            <img src="images/screen1.png" alt="" width="100%" height="500px" id="img1">
+            <img src="images/1.jpg" alt="" width="100%" height="500px" id="img2">
+        </a>
+    </div>
+    <div class="content">
+        <ul>
+            <li>
+                <a href="javascript:void(0)">
+                    <b></b>
+                    <p>维修</p>
+                </a>
+                <span class="left"></span>
+                <span class="right"></span>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <b></b>
+                    <p>回收</p>
+                </a>
+                <span class="left"></span>
+                <span class="right"></span>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <b></b>
+                    <p>享用</p>
+                </a>
+                <span class="left"></span>
+                <span class="right"></span>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <b></b>
+                    <p>置换</p>
+                </a>
+                <span class="left"></span>
+                <span class="right"></span>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <b></b>
+                    <p>客服</p>
+                </a>
+                <span class="left"></span>
+                <span class="right"></span>
+            </li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="tp">
+            <a href="javascript:void(0)">
+                <img src="images/xiangyong.jpg" alt="" width="610px" height="310px">
+            </a>
+            <a href="javascript:void(0)">
+                <img src="images/fenqi.jpg" alt="" width="500px" height="310px">
+            </a>
+            <a href="javascript:void(0)">
+                <img src="images/fix.jpg" alt="" width="500px" height="310px">
+            </a>
+            <a href="javascript:void(0)">
+                <img src="images/anquan.jpg" alt="" width="610px" height="310px">
+            </a>
+        </div>
+    </div>
+    <div class="foot">
+        <div class="foot-l">
+            <dl>
+                <dt>服务指南</dt>
+                <dd>新手指引</dd>
+                <dd>常见问题</dd>
+                <dd>服务条款</dd>
+            </dl>
+            <dl>
+                <dt>服务指南</dt>
+                <dd>新手指引</dd>
+                <dd>常见问题</dd>
+                <dd>服务条款</dd>
+            </dl>
+            <dl>
+                <dt>服务指南</dt>
+                <dd>新手指引</dd>
+                <dd>常见问题</dd>
+                <dd>服务条款</dd>
+            </dl>
+        </div>
+        <div class="foot-z">
+            <div class="zx">
+                <a href="javascript:void(0)">
+                    <img src="images/icon.png" alt="">
+                    <span>在线客服</span>
+                </a>
+            </div>
+            <p>语音客服：
+                <span class="ss">400-900-7077</span>
+            </p>
+            <p>服务时间：工作日9:30-17:30</p>
+
+        </div>
+        <div class="foot-r">
+            <img src="images/wechat.png" alt="" class="tp">
+            <span>官方微博</span>
+            <img src="images/weibo.png" alt="">
+            <span class="gf">官方微信</span>
+        </div>
+    </div>
+    <script src="jquery-1.12.2.js"></script>
+    <script>
+        $(function () {
+            $('#img1').mouseenter(function () {
+                $('#img1').hide();
+                $('#img2').show();
+            })
+            $('#img2').mouseleave(function () {
+                $('#img1').show();
+                $('#img2').hide();
+            })
+        })
+
+        $(function(){
+            $('.content>ul>li').hover(function(){
+                $(this).find('.left').stop().animate({'width':'112px'},500)
+                $(this).find('.right').stop().animate({'width':'112px'},500)                
+            },function(){
+                $(this).find('.left').stop().animate({'width':''},500)
+                $(this).find('.right').stop().animate({'width':''},500)
+            })
+        })
+        $('.nav>ul>li').mouseover(function () {
+            var index = $(this).index();
+            var x = index * $(this).width() + 'px';
+            $('.clode').stop().animate({ 'left': x }, 100)
+        })
+    </script>
+</body>
+
+</html>

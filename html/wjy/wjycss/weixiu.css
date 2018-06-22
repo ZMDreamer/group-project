@@ -1,0 +1,142 @@
+
+.nav span {
+    left : 233px; 
+}
+.c-top {
+    height: 500px;
+    width: 1120px;
+    margin-top : 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.c-middle {
+    margin-top : 40px;
+    height: 210px;
+    background-color:#F7F7F7;
+}
+.cls {
+    border: 2px solid #0FAE6F;
+    border-radius: 8px;
+}
+ .c-middle ul li {
+    width: 330px;
+    height: 197px;
+    float:left;
+    margin: 10px 10px 0 10px;
+    text-align: center; 
+    
+}
+ .c-middle ul a {
+    font-size : 18px;
+}
+ .c-middle ul p{
+    width: 146px;
+    height: 140px;
+    margin: 7px 0 0 94px;
+    background: url(../images/icons.png) no-repeat 12px 6px;
+    background-size: 270px;
+}
+ .c-middle ul li:nth-of-type(2) p {
+    background-position: 6px -125px;
+}
+.c-middle ul li:nth-of-type(3) p {
+    background-position: 8px -257px;
+}
+.box1,
+.box2,
+.box3 {
+    background-color: #F7F7F7;
+    color: gray;
+    font-size: 18px;
+    padding-bottom : 20px;
+}
+.box1 p, 
+.box2 p, 
+.box3 p{
+    font-size: 16px;
+    height: 50px;
+    line-height: 50px;
+    margin: 1px 20px;
+    border-bottom: 1px solid gray;
+}
+.box1 p span,
+.box2 p span,
+.box3 p span {
+    display:inline-block;
+    height: 14px;
+    width: 2px;
+    margin-left: 20px;
+    background-color: orange;
+}
+.box1 h4,
+.box3 h4 {
+    height: 50px;
+    line-height: 50px;
+    margin: 0 20px;
+}
+.box1 div {
+    height: 60px;
+    margin: 0 20px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    margin-bottom : 10px;
+    padding-top : 14px;
+    padding-left: 20px;
+}
+.box1 div:last-of-type,
+.box3 div:last-of-type {
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+    padding:0;
+    background-color: gray;
+    cursor: pointer;
+}
+.box2 div {
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+    margin: 20px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    background-color: #0FAE6F;
+    cursor: pointer;
+    margin-bottom : 10px;
+}
+
+.box3 div {
+    height: 80px;
+    border:1px solid gray;
+    border-radius: 8px;
+    margin: 0 20px 20px 20px ;
+    padding-top: 14px;
+    padding-left: 20px; 
+}
+#c-hide a {
+    color : white;
+}
+.guide {
+    background-color: #F7F7F7;
+    color:gray; 
+}
+.guide>ul {
+    padding : 1px 20px;
+    font-size: 14px;
+}
+.guide>ul>li {
+    border-top : 1px solid gray;
+    line-height: 40px;  
+}
+.guide li ul {
+    margin-bottom : 17px;
+    height: 60px;
+}
+.guide ul ul li {
+   font-size: 14px;
+   line-height: 22px;
+}
+.guide span {
+    padding : 0 20px;
+    cursor: pointer;
+}

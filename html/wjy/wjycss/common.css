@@ -1,0 +1,185 @@
+* {
+    margin : 0;
+    padding :0;
+    list-style: none;
+    text-decoration: none;
+    border :0;
+}
+body {
+    background-color:#F7F7F7;
+}
+a {
+    color : grey;   
+}
+a:hover {
+    color:#0FAE6F
+}
+img {
+    vertical-align: middle;
+}
+.show{
+    display: block;
+}
+.hide {
+    display : none;
+}
+.banxin {
+    width: 1120px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.left {
+    float : left;
+}
+.right{
+    float : right;
+}
+.top {
+    width: 100%;
+    height: 60px;
+    background-color:#fff;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:10;
+}
+.top .right a{
+    font-size: 14px;
+}
+.nav {
+    height: 60px;
+    line-height:60px;
+    position: relative;
+}
+.nav span {
+    height: 3px;
+    width: 86px;
+    background-color : green;
+    position: absolute;
+    left : 322px; 
+    bottom : 0
+}
+.nav li {
+    float : left;
+    margin-left : 24px;
+}
+.bottom {
+    width: 100%;
+    background-color: #fff;
+}
+.footer {
+    height: 200px;
+    margin-top: 40px;
+    border-bottom: 1px solid #BBB;
+}
+.footer dl {
+    margin : 40px 40px;
+}
+.footer dt {
+    font-size:18px;
+    color:gray;
+    margin-bottom: 20px;
+}
+.footer dd {
+    line-height: 30px;
+    font-size: 14px;
+}
+.mask {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: #000000;
+    filter: alpha(opacity=30);
+    -moz-opacity: 0.3;
+    -khtml-opacity: 0.3;
+    opacity: 0.3;
+    z-index: 20;
+    display: none;
+}
+.s-window {
+    width: 310px;
+    height: 152px;
+    line-height: 40px;
+    position: fixed;
+    left : 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9999;
+    background-color: pink;
+    text-align: center;
+    display: none;
+    border-radius: 20px;
+}
+.s-window span{
+    position: absolute;
+    font-size: 12px;
+    right: -18px;
+    top: -24px;
+    background: #ffffff;
+    border: #ebebeb solid 1px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: pink;
+}
+.footer .rexian {
+    height: 166px;
+    width: 113px;
+    line-height: 23px;
+    position: fixed;
+    top: 220px;
+    right: 0px;
+    background-color:rgba(210, 206, 214, 0.4);
+    border-radius:10px;
+    z-index: 11;
+    padding-top:10px;
+}
+.footer .rexian a{
+    color: red;
+    font-size: 26px;
+    font-weight: bold;
+    padding-left:2px;
+}
+.footer .rexian img {
+    width: 24px;
+}
+.footer .rexian p {
+    margin-top: 10px;
+    color:black;
+    padding-left:5px;
+}
+.footer .ma {
+    margin-right: 130px;
+    margin-top: 50px;
+    position: relative;
+}
+.footer .ma .dama {
+    position: absolute;
+    right:0;
+    top:-86px; 
+    left: 0px;
+    z-index:10;
+}
+.footer .ma .dama img {
+    height: 180px;
+}
+.footer .ma p {
+    margin-top: 10px;
+    margin-left : 8px;
+}
+.foot {
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+}
+.last{
+    color: #BBB;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    padding-top: 20px;
+    text-align: center;
+}

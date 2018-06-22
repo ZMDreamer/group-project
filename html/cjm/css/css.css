@@ -1,0 +1,416 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none
+
+}
+ HTML body{
+    position: relative;
+    background-color: #E2E5E7;
+     width:100%;
+     transform-origin: 674.5px 733px;
+     animation:bodyAnimaiton 1.5s ease-out backwards;
+}
+@keyframes bodyAnimaiton{
+    from{
+        transform: rotate(0deg) scale(0.1);
+    }
+    to{
+        transform: rotate(720deg) scale(1);
+    }
+}
+
+.Ctop{
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    overflow: hidden;
+    z-index: 1000;
+}
+.Cnav{
+    margin-left: 10%;
+    /*background-color: red;*/
+    height:60px;
+    width: 50%;
+    float: left;
+    line-height: 60px;
+}
+
+body a:hover{
+    color: deepskyblue;
+}
+.Cnav a{
+    padding: 0 12px;
+    color: white;
+
+}
+.Cnav a:nth-child(1),.Cnav a:nth-child(2){
+    font-size: 30px;
+    font-weight: 400;
+}
+.Cnav a:nth-child(6),.Cnav a:nth-child(2){
+    color: deepskyblue;
+}
+.Cnav a:first-child{
+    color: white;
+    margin-right: -10px;
+    border-right: 1px solid white;
+
+
+}
+.Cbtn{
+    margin-right: 10%;
+    /*background-color: green;*/
+    height: 60px;
+    width:30%;
+    float: left;
+    line-height: 60px;
+    position: relative;
+}
+.Cbtn-l{
+    float: left;
+    width: 70%;
+    height: 100%;
+    /*line-height: 50%;*/
+    /*border-radius: 15px;*/
+}
+.Cbtn-r{
+    float: right;
+    width: 30%;
+
+}
+.Cbtn input{
+    width: 70%;
+    height: 50%;
+    margin-top: 15px;
+    float: left;
+    border-radius: 15px;
+    margin-left: 10px;
+    background-color:rgba(255,255,255,0.3);
+    outline: none;
+    border: none;
+    color:#ffffff;
+    float: left;
+
+
+}
+
+.Cbtn a{
+    float: right;
+    margin-right: 15px;
+    color: white;
+}
+
+.Cheader{
+    width: 100%;
+    height:650px;
+    background-color: yellow;
+
+    /*position: relative;*/
+}
+
+.Cheader img{
+    width: 100%;
+}
+
+.screen {
+    width:100%;
+    height: 650px;
+    overflow: hidden;
+    position: relative;
+}
+
+.screen li {
+    width: 20%;
+    height: 650px;
+    overflow: hidden;
+    float: left;
+}
+
+.screen ul {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 500%;
+}
+
+.Cheader ol {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.Cheader ol li {
+    float: left;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.Cheader ol li.current {
+    background: yellow;
+}
+
+#arr {
+    display: none;
+    z-index: 1000;
+
+}
+
+#arr span {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 5px;
+    top: 300px;
+    margin-top: -20px;
+    background: #000;
+    cursor: pointer;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-family: '黑体';
+    font-size: 30px;
+    color: #fff;
+    opacity: 0.3;
+    border: 1px solid #fff;
+}
+
+#arr #right {
+    right: 5px;
+    left: auto;
+}
+.Cbody{
+    width: 80%;
+    height: 400px;
+    margin: 0 auto;
+    /*background-color: pink;*/
+    background: url("../images/img_24654d77_detail.png" )
+}
+.Cbody li{
+    width:33.3%;
+    height:200px;
+    /*background-color: black ;*/
+    float: left;
+    border-radius: 50px;
+
+
+}
+.Cbody li:hover{
+    transform: scale(1.1);
+}
+.Cbody li div{
+    border-radius: 50px;
+    width: 90%;
+    height: 90%;
+    position: relative;
+
+
+}
+.Cbody span {
+    width: 116px;
+    height: 116px;
+    background: url("../images/3636.png") no-repeat 0 0;
+    float: left;
+    margin-top: 8%;
+}
+.Cbody h3{
+    color: deepskyblue;
+    position: absolute;
+    font-size: 30px;
+    top: 20%;
+    left: 40%;
+}
+.Cbody p{
+    position: absolute;
+    left: 40%;
+    top: 45%;
+}
+.Cbum{
+    width: 80%;
+    height: 600px;
+    /*background-color: red;*/
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.Cbum img{
+    width: 100%;
+}
+.Cbum a{
+    position: absolute;
+    top: 55%;
+    left: 45%;
+
+    width: 100px;
+    height: 48px;
+    line-height: 48px;
+
+    border-radius: 3px;
+    font-size: 16px;
+
+}
+.Cbum a .box{
+    width: 100px;
+    height:48px;;
+    position: relative;
+
+    transform-origin: 0px 24px 24px;
+
+    transform-style: preserve-3d;
+
+    perspective: 0px;
+
+    perspective-origin: 0px 0px;
+    text-align: center;
+    line-height:48px;
+
+}
+.Cbum .box:hover{
+    animation-name: moveTest;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+
+}
+.Cbum .box div {
+    position: absolute;
+    line-height: 48px;
+    padding-left: 10px;
+}
+.Cbum a .box .top{
+    width: 100px;
+    height: 48px;
+    transform: translateZ(48px);
+    background-color:rgba(255,255,255,0.6);
+}
+.Cbum a .box .left{
+    width:48px;
+    height: 48px;
+    transform-origin: left;
+    background-color: transparent;
+    transform: rotateY(-90deg);
+}
+.Cbum a .box .right{
+    width: 48px;
+    height: 48px;
+    transform-origin: right;
+    background-color: transparent;
+    transform:translateX(79px) rotateY(90deg)
+}
+.Cbum a .box .front{
+    width: 100px;
+    height: 48px;
+    background-color: #ff0202;
+    transform-origin: bottom;
+    transform: rotateX(-90deg);
+}
+.Cbum a .box .back{
+    width: 100px;
+    height: 48px;
+    background-color: rgb(177, 194, 32);
+    transform-origin: top;
+    transform: rotateX(90deg);
+}
+.Cbum a .box .bottom{
+    width: 100px;
+    height: 48px;
+    background-color: transparent;
+    transform: rotateY(180deg);
+}
+@keyframes moveTest {
+    from{
+        transform:rotateX(0deg)
+    }
+    to{
+        transform: rotateX(90deg);
+    }
+}
+.Cbum h5{
+    position: absolute;
+    top:40%;
+    left: 40%;
+    color: white;
+    font-weight: normal;
+}
+.Cfooter{
+    width: 80%;
+    height:600px;
+
+    margin: 0 auto;
+    background-image: url(../images/img_246545ee_data.png);
+    position: relative;
+
+}
+.Cfooter li{
+    height: 600px;
+    width: 25%;
+    float: left;
+    position: relative;
+}
+.Cfooter li div:nth-child(1),.Cfooter li div:nth-child(3){
+    width:100%;
+    height:50%;
+    background-color: rgba(0,0,0,0.4);
+    top:0;
+    position: absolute;
+}
+.Cfooter li div:nth-child(2),.Cfooter li div:nth-child(4){
+    width:100%;
+    height:50%;
+    background-color: rgba(0,0,0,0.4);
+    top:300px;
+    position: absolute;
+}
+.Cfooter span{
+    width: 116px;
+    height: 116px;
+    background: url("../images/3636.png") no-repeat 0 -719px;
+    position: absolute;
+    left:80px;
+    top:220px;
+}
+.Cfooter p{
+    position: absolute;
+    top:140px;
+    left: 80px;
+    color: white;
+}
+.Cfooter h3{
+    position: absolute;
+    top:400px;
+    left: 110px;
+    color: white;
+    font-size: 40px;
+}
+.Cfooter h4{
+    position: absolute;
+    top:470px;
+    left: 120px;
+    color: white;
+
+}
+.Cfooter .up{
+    width: 52px;
+    height: 176px;
+    position: absolute;
+    bottom: 50px;
+    right: -100px;
+    cursor: pointer;
+}
+.Cfooter .up a{
+    float: left;
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    margin-bottom: 10px;
+    background: url("../images/250250.png")no-repeat  6px -34px;
+    background-color: #ccd7e3;
+    border-radius: 26px;
+}

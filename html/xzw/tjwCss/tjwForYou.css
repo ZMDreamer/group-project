@@ -1,0 +1,671 @@
+body {
+    background: rgba(247,247,247,.3) url(../tjwImg/bubbles.png) repeat fixed;
+}
+#skrollr-body{
+    display: none;
+}
+
+.clickBox{
+    width: 500px;
+    height: 500px;
+    position: fixed;
+    top: 50px;
+    left:450px;
+}
+.clickBox .head{
+    width: 250px;
+    height: 125px;
+    margin: 10px auto;
+    background-color: rgba(198, 28, 167, 0.156);
+    border-radius:125px 125px 0 0 ;
+    position: relative;
+}
+.clickBox .head:before,
+.clickBox .head:after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+    top: 65px;
+    border-radius:35px ;
+}
+.clickBox .head:before{
+    left:70px ;
+}
+.clickBox .head:after{
+    right: 70px;
+}
+.clickBox .body{
+    width: 250px;
+    height: 250px;
+    border: 1px solid #fff;
+    margin: 0 auto;
+    background-color: rgba(209, 66, 126, 0.109);
+    border-radius:0 0 20px 20px ;
+    position: relative;
+    font:900 25px  "΢���ź�";
+    text-align: center;
+}
+#audio{
+    width: 200px;
+    position: fixed;
+    top:400px ;
+    left: 600px;
+    opacity: 1;
+    z-index: 100;
+}
+.clickBox .body:before,
+.clickBox .body:after{
+    content: "";
+    width: 30px;
+    height: 180px;
+    background-color: rgba(225, 78, 205, 0.197);
+    position: absolute;
+    top: 20px;
+    border-radius:10px ;
+}
+.clickBox .body:before{
+    left: -40px;
+}
+.clickBox .body:after{
+    right: -40px;
+}
+.clickBox .foot{
+    width: 250px;
+    height: 90px;
+    background-color: #FCFCFC;
+    margin: 0 auto;
+    position: relative;
+}
+.clickBox .foot:before,
+.clickBox .foot:after{
+    content: "";
+    width: 30px;
+    height: 90px;
+    background-color: rgba(133, 35, 84, 0.122);
+    position: absolute;
+    border-radius:0 0 10px 10px ;
+}
+.clickBox .foot:before{
+    left: 50px;
+}
+.clickBox .foot:after{
+    right: 50px;
+}
+.clickBox .h2{
+    margin-top: 80px;
+    color: #33a4ff;
+
+}
+#clickMy{
+    font-size: 60px;
+    color: rgba(255, 0, 0, 0.408);
+    text-shadow: 2px 3px 2px rgba(216, 76, 76, 0.143);
+    text-shadow: 2px 2px 0px #eb6d5466;
+}
+.head1{
+    width: 30px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 0 0 25px 25px;
+    position: absolute;
+    top:100px ;
+    left:110px;
+}
+
+/*c3Ч�����*/
+@keyframes move {
+    from{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(360deg);
+    }
+}
+@keyframes move2 {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes move3 {
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+@keyframes move4 {
+    from{
+        transform: skew(0deg);
+    }
+    50%{
+        transform: skew(20deg);
+    }
+    to{
+        transform: skew(-20deg);
+    }
+}
+@keyframes move5 {
+    from{
+        transform: scale(-1);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+/*@keyframes move6 {*/
+    /*from{*/
+        /*transform: rotate(0deg);*/
+    /*}*/
+    /*30%{*/
+        /*transform: translate(300px,300px) rotate(180deg);*/
+    /*}*/
+    /*50%{*/
+        /*transform: translate(300px,-300px) rotate(360deg);*/
+    /*}*/
+    /*70%{*/
+        /*transform:translate(-400px,-250px)  rotate(-180deg);*/
+    /*}*/
+    /*to{*/
+        /*transform:translate(-350px,200px)  rotate(-360deg);*/
+    /*}*/
+/*}*/
+
+.centerShowBox{
+    width: 320px;
+    height: 320px;
+    /*margin: 300px auto;*/
+    position: relative;
+    /*transform:rotate3d(1,1,0,-30deg);*/
+    transform-style: preserve-3d;
+
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    /*animation-direction:alternate ;*/
+    animation-timing-function: linear;
+    transform-origin: center center;
+}
+@keyframes moveaaa {
+    from{
+        transform:rotate3d(1,1,0,0deg)
+    }
+
+    to{
+        transform:rotate3d(1,1,0,360deg);
+    }
+}
+.img{
+    width: 320px;
+    height: 320px;
+    position: absolute;
+}
+.img1{
+    transform:translateZ(160px);
+}
+.img2{
+    transform:translateZ(-160px) ;
+}
+.img3{
+    transform:translateX(-160px) rotateY(-90deg);
+}
+.img4{
+    transform:translateX(160px) rotateY(90deg);
+}
+.img5{
+    transform:translateY(-160px) rotateX(90deg);
+}
+.img6{
+    transform:translateY(160px) rotateX(-90deg);
+}
+.centerShowBox:hover{
+    animation-name: moveaaa;
+}
+
+/*��׿������eng*/
+/*ͷ����ʼ*/
+.sift {
+    color: #31343b;
+    text-align: center;
+    padding: 40px 0
+}
+
+.sift h1 {
+    font: 900 22px "Microsoft YaHei";
+    color: #000;
+}
+
+.sift .underline {
+    height: 2px;
+    width: 28px;
+    margin: 0 auto;
+    margin-top:10px;
+    background-color: #E2E5E7;
+    display: inline-block;
+}
+/*ͷ����ʼ*/
+
+/*firstPic begin*/
+.banXin{
+    width: 1120px;
+    margin: 0 auto;
+}
+
+.big1:hover{
+    animation-name: move;
+    animation-duration: 2s;
+}
+.big2:hover{
+    animation-name: move2;
+    animation-duration: 2s;
+}
+.big3:hover{
+    animation-name: move3;
+    animation-duration: 2s;
+}
+.big4:hover{
+    animation-name: move4;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+.big5:active{
+    animation-name: move5;
+    animation-duration: 1s;
+    /*animation-timing-function: linear;*/
+}
+/*.big6:active{*/
+    /*animation-name: move6;*/
+    /*animation-duration: 2s;*/
+    /*animation-timing-function: linear;*/
+/*}*/
+.firstPicBox{
+    height: 560px;
+}
+.firstPicBox>.left:hover,
+.firstPicBox>.centre:hover,
+.firstPicBox>.right:hover{
+    box-shadow: 2px 5px 5px 5px #555350;
+}
+.firstPicBox>.left ,
+.firstPicBox>.centre,
+.firstPicBox>.right{
+    width: 320px;
+    height: 520px;
+    float: left;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.5);/*�ú���͸����ʾ���ݵ�Ч��*/
+}
+.firstPicBox>.centre{
+    margin-left: 20px;
+}
+.firstPicBox>.right{
+    float: right;
+}
+.firstPicBox .intro{
+    height: 95px;
+    line-height: 30px;
+    margin: 40px 0 30px;
+    font-family: "Microsoft YaHei", "Helvitica Neue", Helvitica, Arial, "Hiragino Sans GB", "Arial Regular", "Microsoft JhengHei", sans-serif;
+    font-size: 18px;
+    color: rgb(171, 176, 188);
+}
+.firstPicBox .intro>span{
+    color: rgb(49, 52, 59);
+}
+.down .ico{
+    border-radius:34px;
+    vertical-align:middle;
+    margin-right:8px;
+    float: left;
+}
+.down .nickname{
+    color:#31343b;
+    font-size:16px;
+    font-family: "Microsoft YaHei", "Helvitica Neue", Helvitica, Arial, "Hiragino Sans GB", "Arial Regular", "Microsoft JhengHei", sans-serif;
+
+}
+.down{
+    height: 34px;
+    line-height: 34px;
+}
+.like{
+    float: right;
+    font-size: 16px;
+    line-height: 18px;
+}
+.like>img{
+    width: 18px;
+    height: 18px;
+    vertical-align:bottom;
+}
+.like>i{
+    display:inline-block;
+    width: 18px;
+    height: 18px;
+    margin-top: 10px;
+    font-family: "Microsoft YaHei";
+    color: #ABB0CD;
+}
+/*firstPic end*/
+
+/*secondPicBox begin*/
+.secondPicBox>.left ,
+.secondPicBox>.centre,
+.secondPicBox>.right{
+    width: 320px;
+    height: 520px;
+    float: left;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.5);/*�ú���͸����ʾ���ݵ�Ч��*/
+}
+.secondPicBox{
+    height: 560px;
+    margin-top: 20px;
+}
+.secondPicBox>.centre{
+    margin-left: 20px;
+}
+.secondPicBox>.right{
+    float: right;
+}
+.secondPicBox .intro{
+    height: 95px;
+    line-height: 30px;
+    margin: 40px 0 30px;
+    font-family: "Microsoft YaHei", "Helvitica Neue", Helvitica, Arial, "Hiragino Sans GB", "Arial Regular", "Microsoft JhengHei", sans-serif;
+    font-size: 18px;
+    color: rgb(171, 176, 188);
+}
+.secondPicBox .intro>span{
+    color: rgb(49, 52, 59);
+}
+.secondPicBox>.left:hover,
+.secondPicBox>.centre:hover,
+.secondPicBox>.right:hover{
+    box-shadow: 2px 5px 5px 5px #635c94;
+}
+/*secondPicBox end*/
+
+/*thirdlyPicBox begin*/
+.thirdlyPicBox>.left ,
+.thirdlyPicBox>.centre,
+.thirdlyPicBox>.right{
+    width: 320px;
+    height: 520px;
+    float: left;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.5);/*�ú���͸����ʾ���ݵ�Ч��*/
+}
+.thirdlyPicBox{
+    height: 560px;
+    margin-top: 20px;
+}
+.thirdlyPicBox>.centre{
+    margin-left: 20px;
+}
+.thirdlyPicBox>.right{
+    float: right;
+}
+.thirdlyPicBox .intro{
+    height: 95px;
+    line-height: 30px;
+    margin: 40px 0 30px;
+    font-family: "Microsoft YaHei", "Helvitica Neue", Helvitica, Arial, "Hiragino Sans GB", "Arial Regular", "Microsoft JhengHei", sans-serif;
+    font-size: 18px;
+    color: rgb(171, 176, 188);
+}
+.thirdlyPicBox .intro>span{
+    color: rgb(49, 52, 59);
+}
+.thirdlyPicBox>.left:hover,
+.thirdlyPicBox>.centre:hover,
+.thirdlyPicBox>.right:hover{
+    box-shadow: 2px 5px 5px 5px #5dba9e;
+}
+
+/*thirdlyPicBox end*/
+
+
+/*fourthPicBox begin*/
+.fourthPicBox>.left ,
+.fourthPicBox>.centre,
+.fourthPicBox>.right{
+    width: 320px;
+    height: 520px;
+    float: left;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.5);/*�ú���͸����ʾ���ݵ�Ч��*/
+}
+.fourthPicBox{
+    height: 560px;
+    margin-top: 20px;
+}
+.fourthPicBox>.centre{
+    margin-left: 20px;
+}
+.fourthPicBox>.right{
+    float: right;
+}
+.fourthPicBox .intro{
+    height: 95px;
+    line-height: 30px;
+    margin: 40px 0 30px;
+    font-family: "Microsoft YaHei", "Helvitica Neue", Helvitica, Arial, "Hiragino Sans GB", "Arial Regular", "Microsoft JhengHei", sans-serif;
+    font-size: 18px;
+    color: rgb(171, 176, 188);
+}
+.fourthPicBox .intro>span{
+    color: rgb(49, 52, 59);
+}
+.fourthPicBox>.left:hover,
+.fourthPicBox>.centre:hover,
+.fourthPicBox>.right:hover{
+    box-shadow: 2px 5px 5px 5px #569c4b;
+}
+/*fourthPicBox end*/
+
+/*fifthPicBox begin*/
+.fifthPicBox>.left ,
+.fifthPicBox>.centre,
+.fifthPicBox>.right{
+    width: 320px;
+    height: 520px;
+    float: left;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.5);/*�ú���͸����ʾ���ݵ�Ч��*/
+}
+.fifthPicBox{
+    height: 560px;
+    margin-top: 20px;
+}
+.fifthPicBox>.centre{
+    margin-left: 20px;
+}
+.fifthPicBox>.right{
+    float: right;
+}
+.fifthPicBox .intro{
+    height: 95px;
+    line-height: 30px;
+    margin: 40px 0 30px;
+    font-family: "Microsoft YaHei", "Helvitica Neue", Helvitica, Arial, "Hiragino Sans GB", "Arial Regular", "Microsoft JhengHei", sans-serif;
+    font-size: 18px;
+    color: rgb(171, 176, 188);
+}
+.fifthPicBox .intro>span{
+    color: rgb(49, 52, 59);
+}
+.fifthPicBox>.left:hover,
+.fifthPicBox>.centre:hover,
+.fifthPicBox>.right:hover{
+    box-shadow: 2px 5px 5px 5px #555350;
+}
+/*fifthPicBox end*/
+
+/*sixthPicBox begin*/
+.sixthPicBox>.left ,
+.sixthPicBox>.centre,
+.sixthPicBox>.right{
+    width: 320px;
+    height: 520px;
+    float: left;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.5);/*�ú���͸����ʾ���ݵ�Ч��*/
+}
+.sixthPicBox{
+    height: 560px;
+    margin-top: 20px;
+}
+.sixthPicBox>.centre{
+    margin-left: 20px;
+}
+.sixthPicBox>.right{
+    float: right;
+}
+.sixthPicBox .intro{
+    height: 95px;
+    line-height: 30px;
+    margin: 40px 0 30px;
+    font-family: "Microsoft YaHei", "Helvitica Neue", Helvitica, Arial, "Hiragino Sans GB", "Arial Regular", "Microsoft JhengHei", sans-serif;
+    font-size: 18px;
+    color: rgb(171, 176, 188);
+}
+.sixthPicBox .intro>span{
+    color: rgb(49, 52, 59);
+}
+.sixthPicBox>.left:hover,
+.sixthPicBox>.centre:hover,
+.sixthPicBox>.right:hover{
+    box-shadow: 2px 5px 5px 5px #8d8d49;
+}
+/*sixthPicBox end*/
+
+/*seventhPicBox begin*/
+.seventhPicBox>.left ,
+.seventhPicBox>.centre,
+.seventhPicBox>.right{
+    width: 320px;
+    height: 520px;
+    float: left;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.5);/*�ú���͸����ʾ���ݵ�Ч��*/
+}
+.seventhPicBox{
+    height: 560px;
+    margin-top: 20px;
+}
+.seventhPicBox>.centre{
+    margin-left: 20px;
+}
+.seventhPicBox>.right{
+    float: right;
+}
+.seventhPicBox .intro{
+    height: 95px;
+    line-height: 30px;
+    margin: 40px 0 30px;
+    font-family: "Microsoft YaHei", "Helvitica Neue", Helvitica, Arial, "Hiragino Sans GB", "Arial Regular", "Microsoft JhengHei", sans-serif;
+    font-size: 18px;
+    color: rgb(171, 176, 188);
+}
+.seventhPicBox .intro>span{
+    color: rgb(49, 52, 59);
+}
+
+.seventhPicBox>.left:hover,
+.seventhPicBox>.centre:hover,
+.seventhPicBox>.right:hover{
+    box-shadow: 2px 5px 5px 5px #3b5b90;
+}
+/*seventhPicBox end*/
+
+/*eighthPicBox begin*/
+.eighthPicBox>.left ,
+.eighthPicBox>.centre,
+.eighthPicBox>.right{
+    width: 320px;
+    height: 520px;
+    float: left;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.5);/*�ú���͸����ʾ���ݵ�Ч��*/
+}
+.eighthPicBox{
+    height: 560px;
+    margin-top: 20px;
+}
+.eighthPicBox>.centre{
+    margin-left: 20px;
+}
+.eighthPicBox>.right{
+    float: right;
+}
+.eighthPicBox .intro{
+    height: 95px;
+    line-height: 30px;
+    margin: 40px 0 30px;
+    font-family: "Microsoft YaHei", "Helvitica Neue", Helvitica, Arial, "Hiragino Sans GB", "Arial Regular", "Microsoft JhengHei", sans-serif;
+    font-size: 18px;
+    color: rgb(171, 176, 188);
+}
+.eighthPicBox .intro>span{
+    color: rgb(49, 52, 59);
+}
+.eighthPicBox>.left:hover,
+.eighthPicBox>.centre:hover,
+.eighthPicBox>.right:hover{
+    box-shadow: 2px 5px 5px 5px #229486;
+}
+/*eighthPicBox end*/
+
+/*ninthPicBox begin*/
+.ninthPicBox>.left ,
+.ninthPicBox>.centre,
+.ninthPicBox>.right{
+    width: 320px;
+    height: 520px;
+    float: left;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.5);/*�ú���͸����ʾ���ݵ�Ч��*/
+}
+.ninthPicBox{
+    height: 560px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+.ninthPicBox>.centre{
+    margin-left: 20px;
+}
+.ninthPicBox>.right{
+    float: right;
+}
+.ninthPicBox .intro{
+    height: 95px;
+    line-height: 30px;
+    margin: 40px 0 30px;
+    font-family: "Microsoft YaHei", "Helvitica Neue", Helvitica, Arial, "Hiragino Sans GB", "Arial Regular", "Microsoft JhengHei", sans-serif;
+    font-size: 18px;
+    color: rgb(171, 176, 188);
+}
+.ninthPicBox .intro>span{
+    color: rgb(49, 52, 59);
+}
+.ninthPicBox>.left:hover,
+.ninthPicBox>.centre:hover,
+.ninthPicBox>.right:hover{
+    box-shadow: 2px 5px 5px 5px #1a7235;
+}
+/*ninthPicBox end*/
+
+#footA{
+    font-size: 20px;
+    color: #000;
+    margin-right: 40px;
+    padding-bottom: 20px;
+    float: right;
+}
+
+

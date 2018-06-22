@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="favicon.ico"  type="image/x-icon"/> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用户登录/注册</title>
+    <link rel="stylesheet" href="css/jigsaw.css">
+    <style> 
+        *{
+            margin:0;
+            padding:0;
+            outline:none;
+            text-decoration: none;
+        }
+        body{
+            background: #FAFCFF;
+        }
+        .w{
+            width: 1120px;
+            margin:0 auto ;
+        }
+        .top{
+            height: 50px;
+            border-bottom:1px solid #E5E6E8 ; 
+        }
+        .top img{
+            position: absolute;
+            background-color: #FAFCFF;
+            padding:0 20px;
+            top:28px;
+            left:560px;
+        }
+        .left{
+            width: 540px;
+            height: 550px;
+            float:left;
+            position: relative;
+            background: url("img/login.png") no-repeat 130px 162px; 
+        }
+        .right{
+            float:left;
+            position: relative;
+            height: 600px;
+            width: 550px;
+        }
+        #span1{
+            position: absolute;
+            width: 150px;
+            height: 30px;
+            top:110px;
+            left: 340px;
+        }
+        #span2{
+            position: absolute;
+            width: 150px;
+            height: 30px;
+            top:165px;
+            left: 340px;
+        }
+        input[type="text"]{
+            width: 459px;
+            height: 42px;
+            display:block;
+            text-indent: 10px;
+            background: #FAFCFF;
+            border:1px solid #E5E6E8 ;
+            margin-left: 30px;
+
+        }
+        input[type="text"]:first-child{
+            margin-top:100px;
+            width: 300px;
+        }
+        #passWord{
+            margin-top: 10px;
+            width: 300px;
+        }
+        /*input[type="text"]:nth-child(2){*/
+            /*margin-top: 30px;*/
+            /*margin:30px 0;*/
+            /*width: 300px;*/
+        /*}*/
+        #div{
+            margin-top: 80px;
+            margin-left: 30px;
+        }
+        #div .forgetPw{
+            color:blue;
+            font-style:normal;
+            margin-left:145px;
+        }
+        .login{
+            width: 310px;
+            height: 43px;
+            line-height: 43px;
+            text-align: center;
+            display:block;
+            margin:10px 0;
+            background-color: #000;
+            color:#fff;
+            position: absolute;
+            bottom: 140px;
+            left: -20px;
+        }
+        input[type="checkbox"]{
+            width: 15px;
+            height: 15px;
+            vertical-align: middle;
+        }
+        .right p {
+            font-size :15px;
+            position: absolute;
+            bottom: 120px;
+            left:140px;
+        }
+        .right p span{
+            color :#999999;
+        }
+        .else{
+            position: absolute;
+            bottom:20px;
+            left: -50px;
+        }
+        .else a{
+            width: 60px;
+            height: 60px;
+            box-sizing: content-box;
+            display:inline-block;
+            /*margin-right:35px;*/
+            background-color: #37A5E1;
+            border-radius:35px;
+            background-image:url("img/ZEALER.png");
+
+        }
+        .else a:first-child{
+            background-position: -755px -562px;
+        }
+        .else a:nth-child(2){
+            background-color:#EB373E;
+            background-position: -854px -562px;
+        }
+        .else a:nth-child(3){
+            background-position: -954px -562px;
+        }
+        .else a:nth-child(4){
+            background-color:#56C13D;
+            background-position: -1054px -562px;
+        }
+        .left div{
+            width: 196px;
+            height: 110px;
+            position:absolute;
+            bottom:86px;
+            right:71px;
+            background-color:grey;
+            opacity: 0.4;
+        }
+        .left span{
+            width: 196px;
+            height: 2px;
+            position:absolute;
+            bottom:86px;
+            right:71px;
+            z-index:5;
+            background-color:blue ;
+            border-top:1px solid #E5E6E8 ;
+            border-bottom:1px solid #E5E6E8 ;
+            animation:go 2s infinite ;
+        }
+		@keyframes go{
+			0%{
+				transform:translate(0,0);
+			}
+			50%{
+				transform:translate(0,-110px)  ;
+			}
+			100%{
+				transform:translate(0,0)  ;
+			}
+		}
+
+        #msg {
+            width: 100%;
+            line-height: 30px;
+            font-size: 14px;
+            margin-left:120px;
+        }
+        a:link,a:visited,a:hover,a:active {
+            margin-left: 50px;
+            color: #0366D6;
+        }
+        .container{
+            width: 300px;
+            height: 100px;
+            margin-top: 5px;
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class ="w">
+            <div class ='top'>
+                <span class="moveline"></span>
+                <a href="#"><img src= "img/logo.png" alt=""></a>
+            </div>
+            <div class = "main">
+                <div class = "left">
+                    <div></div>
+                    <span id = "line"></span>
+                </div>
+                <div class = "right">
+                    <input type="text" placeholder = "邮箱、手机号、用户名" value="" id="userName"><span id="span1"></span>
+                    <input type="text" placeholder = "密码 " value="" id="passWord"><span id="span2"></span>
+
+                    <div class="container">
+                        <div id="captcha" style="position: relative"></div>
+                        <div id="msg"></div>
+                    </div>
+
+                    <div id="div">
+                        <label for ="click" class="label1">
+                            <input type="checkbox" id = "click">  记住密码
+                        </label>
+                            <a href="#" class = "forgetPw">忘记密码?</a>
+                    </div>
+                    <a href="" class = "login" id="login">登 录</a>
+                    <p><span>还没有账号,</span>使用以下方式登录</p>
+                    <div class= "else">
+                        <a href="javascript:;"></a>
+                        <a href="javascript:;"></a>
+                        <a href="javascript:;"></a>
+                        <a href="javascript:;"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src ="js/jquery-1.12.2.js"></script>
+<script src="js/jigsaw.js"></script>
+<script>
+    $(function () {
+        $('#userName').blur(function () {
+            var reg =  /^\w{2,4}$/;
+            var span1 = this.nextElementSibling || this.nextSibling;
+            console.log(span1)
+            if (!reg.test(this.value)){
+                span1.innerText = '用户名错误！'
+                span1.style.color = 'red';
+            }else{
+                span1.innerText = '√';
+                span1.style.color = 'green';
+            }
+        });
+        $('#passWord').blur(function () {
+            var reg =  /^\w{6,18}$/;
+            var span2 = this.nextElementSibling || this.nextSibling;
+            console.log(span2)
+            if (!reg.test(this.value)){
+                span2.innerText = '密码格式错误！'
+                span2.style.color = 'red';
+            }else{
+                span2.innerText = '√';
+                span2.style.color = 'green';
+            }
+        });
+    });
+
+
+    $(function () {
+
+        var userArray = ['hzc','zm','hj','wjy','cjm','xzw','sq','yc','wst','tql','kzm'];
+        var array = [];
+        $('#login').click(function () {
+            for (var i = 0; i < userArray.length; i++) {
+                var user = userArray[i];
+            }
+            var userName = $('#userName').val();
+            var passWord = $('#passWord').val();
+            array.push(userName);
+            for (var i = 0;i < userArray.length; i++) {
+                for (var j = 0;j < array.length; j++) {
+                    if (userArray[i] === array[j]) {
+                        $('#login').attr('href', '../../index.html');
+
+//                        if (passWord === 123) {
+//                            $('#login').attr('href','../../index.html');
+//                        }else{
+//                            alert('密码错误，请输入正确的密码！');
+//                            return;
+//                        }
+                    }
+                }
+            }
+        })
+
+    })
+
+    $(function () {
+        jigsaw.init(document.getElementById('captcha'), function () {
+            document.getElementById('msg').innerHTML = '验证成功！'
+        })
+    })
+
+</script>
+</html>

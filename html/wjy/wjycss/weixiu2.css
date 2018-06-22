@@ -1,0 +1,395 @@
+.serviceImg {
+    margin-top : 80px;
+    height: 500px;
+    width: 1117px;
+    overflow: hidden;
+    position: relative;
+}
+#tu {
+    height: 500px;
+}
+.serviceImg ol {
+    width: 80px;
+    height: 10px;
+    position: absolute;
+    left:50%;
+    bottom : 30px;
+    transform: translateX(-50%)
+}
+.serviceImg ol li {
+    float : left;
+    height: 12px;
+    width: 12px;
+    margin-left : 8px;
+    background-color: black;
+    border-radius: 50%;
+}
+.serviceImg ol li:first-child {
+    background-color: red;
+}
+.s-nav .lead ul{
+    width: 100%;
+    height: 130px;
+    margin-top: 20px; 
+}
+/*����ͼ����*/
+/*���񵼺���ʼ*/
+/*****************************��һ��tab�������ul�е�li,�л������div************************************/
+.csmiddle .cs_nav>ul {
+    height: 130px;
+    /* border-bottom: 1px solid #F4F4F4; */
+    /* padding: 20px 0; */
+    margin-top : 20px;
+    overflow: hidden;
+}
+.csmiddle .cs_nav>ul>li {
+    width: 220px;
+    height: 126px;
+    border: 2px solid transparent;
+    font-size: 16px;
+    text-align: center;
+    /*����ı�߿����ɫ���������ɫ������ͼƬ*/
+}
+.csmiddle .cs_nav>ul>li.active {
+    border-color: #0FAE6F;
+    color: #0FAE6F;
+}
+
+.csmiddle .cs_nav>ul>li:hover {
+    box-shadow: 0px 0px 5px #ccc;
+}
+.csmiddle .cs_nav>ul>li .d1,.dd1 {
+    height: 58px;
+    width: 49px;
+    margin: 19px auto;
+}
+.csmiddle .cs_nav>ul>li .d1 {
+    background: url("../images/icon2.png") no-repeat -8px -8px;
+    display: none;
+}
+.csmiddle .cs_nav>ul>li .dd1 {
+    background: url("../images/icon2.png") no-repeat -8px -94px;
+   
+}
+.csmiddle .cs_nav>ul>li .d2,.dd2 {
+    height: 56px;
+    width: 60px;
+    margin: 20px auto;
+}
+.csmiddle .cs_nav>ul>li .d2 {
+    background: url("../images/icon2.png") no-repeat -71px -8px;
+}
+.csmiddle .cs_nav>ul>li .dd2 {
+    background: url("../images/icon2.png") no-repeat -69px -94px;
+    display: none;
+}
+.csmiddle .cs_nav>ul>li .d3,.dd3 {
+    height: 61px;
+    width: 61px;
+    margin: 18px auto;
+}
+.csmiddle .cs_nav>ul>li .d3 {
+    background: url("../images/icon2.png") no-repeat -146px -6px;
+}
+.csmiddle .cs_nav>ul>li .dd3 {
+    background: url("../images/icon2.png") no-repeat -145px -89px;
+    display: none;
+}
+.csmiddle .cs_nav>ul>li .d4,.dd4 {
+    height: 64px;
+    width: 54px;
+    margin: 16px auto;
+}
+.csmiddle .cs_nav>ul>li .d4 {
+    background: url("../images/icon2.png") no-repeat -217px -1px;
+}
+.csmiddle .cs_nav>ul>li .dd4 {
+    background: url("../images/icon2.png") no-repeat -218px -87px;
+    display: none;
+}
+.csmiddle .cs_nav>ul>li .d5,.dd5 {
+    height: 66px;
+    width: 79px;
+    margin: 15px auto;
+}
+.csmiddle .cs_nav>ul>li .d5 {
+    background: url("../images/icon2.png") no-repeat -282px -0px;
+}
+.csmiddle .cs_nav>ul>li .dd5 {
+    background: url("../images/icon2.png") no-repeat -274px -86px;
+    display: none;
+}
+.csmiddle .cs_nav>.current {
+    display: none;
+}
+/*************************��һ��tab����ʼ�����div�е�ul�е������л�ol�е�li******************************/
+.csmiddle .cs_nav>div {
+    width: 100%;
+    /* background: white; */
+}
+.csmiddle .cs_nav .newGuide,.help {
+    padding-top: 49px;
+}
+.csmiddle .cs_nav .newGuide ul {
+    height: 40px;
+    font: 14px "Microsoft YaHei";
+    border-bottom: 1px solid #E2E5E7;
+    margin: 0 50px 30px 50px;
+    padding-left: 44px;
+    background: url("../images/icon_info.png") no-repeat top 5px left 15px ;
+    background-size: 20px;
+}
+.csmiddle .cs_nav .newGuide ul i {
+    padding: 0 21px;
+    color: #E2E5E7;
+    font-size: 18px;
+    float:left;
+}
+.csmiddle .cs_nav .newGuide ul a {
+    display: inline-block;
+    height: 38px;
+    border-bottom: 3px solid transparent;
+    /*����±߿����ɫ����ʾ����*/
+}
+.csmiddle .cs_nav .newGuide ul a.active {
+    border-bottom-color: #0FAE6F
+}
+.csmiddle .cs_nav .newGuide ol {
+    padding: 0 100px 30px 95px;
+}
+.csmiddle .cs_nav .newGuide ol .current {
+    display: none;
+}
+.csmiddle .cs_nav .newGuide ol li h3 {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.7;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 30px;
+}
+.csmiddle .cs_nav .newGuide ol li h4 {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.7;
+    color: #333333;
+}
+.csmiddle .cs_nav .newGuide ol li p {
+    line-height: 25px;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 30px;
+}
+.csmiddle .cs_nav .newGuide ol li p>table {
+   text-align: center;
+
+}
+.csmiddle .cs_nav .help ul {
+    height: 40px;
+    font: 14px "Microsoft YaHei";
+    border-bottom: 1px solid #E2E5E7;
+    margin: 0 50px 30px 50px;
+    padding-left: 44px;
+    background: url("../images/icon_info.png") no-repeat top 5px left 15px ;
+    background-size: 20px;
+}
+.csmiddle .cs_nav .help ul i {
+    padding: 0 21px;
+    color: #E2E5E7;
+    font-size: 18px;
+}
+.csmiddle .cs_nav .help ul a {
+    display: inline-block;
+    height: 34px;
+    border-bottom: 2px solid transparent;
+    /*����±߿����ɫ����ʾ����*/
+}
+.csmiddle .cs_nav .help ul a.active {
+    border-color: #0FAE6F;
+}
+.csmiddle .cs_nav .help ol {
+    padding: 0 100px 165px 95px;
+}
+.csmiddle .cs_nav .help ol .current {
+    display: none;
+}
+.csmiddle .cs_nav .help ol li h3 {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.7;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 30px;
+}
+.csmiddle .cs_nav .help ol li h4 {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.7;
+    color: #333333;
+}
+.csmiddle .cs_nav .help ol li p {
+    line-height: 25px;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/*.csmiddle .cs_nav .newGuide>ol>.current {*/
+    /*display: block;*/
+/*}*/
+.csmiddle .cs_nav .consult,.advise {
+    padding: 70px 210px 60px 200px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.csmiddle .cs_nav .consult>div {
+    width: 335px;
+    height: 313px;
+    padding-top: 22px;
+    border: 1px solid #E2E5E7;
+    border-radius: 5px;
+    text-align: center;
+}
+.csmiddle .cs_nav .consult>div:hover {
+    border-color: #0FAE6F;
+}
+.csmiddle .cs_nav .consult>div .fl {
+    width: 66px;
+    height: 54px;
+    margin: 18px auto;
+    background: url("../images/consoult.png") no-repeat;
+}
+/*.csmiddle .cs_nav .advise>div .left {*/
+    /*background: url("../mlimgs/consoult_i1.png") no-repeat;*/
+/*}*/
+.csmiddle .cs_nav .consult>div .fr {
+    width: 54px;
+    height: 54px;
+    margin: 18px auto;
+    background: url("../images/consoult_i1.png") no-repeat;
+}
+/*.csmiddle .cs_nav .advise>div .right {*/
+    /*background: url("../mlimgs/consoult_i3.png") no-repeat;*/
+/*}*/
+.csmiddle .cs_nav .consult>div .cs {
+    font-size: 22px;
+    margin-bottom: 14px;
+}
+.csmiddle .cs_nav .consult>div .time {
+    font-size: 14px;
+}
+.csmiddle .cs_nav .consult>div .state {
+    font-size: 13px;
+    color: #abb0bc;
+}
+.csmiddle .cs_nav .consult>div a {
+    display: inline-block;
+    width: 116px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    color: #0FAE6F;
+    margin: 26px 0 46px 0;
+    border: 1px solid #0FAE6F;
+    border-radius: 5px;
+}
+.csmiddle .cs_nav .consult>div .voice {
+    font-size: 14px;
+    margin: 38px 0 52px 0;
+}
+.csmiddle .cs_nav .consult>div .voice i {
+    font-size: 18px;
+    color: #0FAE6F;
+}
+.csmiddle .cs_nav .afterSale {
+    padding: 52px 50px 145px 50px;
+}
+.csmiddle .cs_nav .afterSale .click {
+    margin-bottom: 44px;
+}
+.csmiddle .cs_nav .afterSale div span {
+    display: inline-block;
+    width: 22px;
+    height: 24px;
+    background: url("../images/serve_icon.png") no-repeat;
+    vertical-align: middle;
+}
+.csmiddle .cs_nav .afterSale div a {
+    font-size: 16px;
+    padding-left: 15px;
+    color: #0FAE6F;
+}
+.csmiddle .cs_nav .afterSale div h3 {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.7;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 30px;
+}
+.csmiddle .cs_nav .afterSale div h4 {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.7;
+    color: #333333;
+}
+.csmiddle .cs_nav .afterSale div p {
+    line-height: 25px;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 30px;
+}
+.csmiddle .cs_nav .advise>div {
+    width: 335px;
+    height: 313px;
+    padding-top: 22px;
+    border: 1px solid #E2E5E7;
+    border-radius: 5px;
+    text-align: center;
+}
+.csmiddle .cs_nav .advise>div:hover {
+    border-color: #0FAE6F;
+}
+.csmiddle .cs_nav .advise>div .fl {
+    width: 66px;
+    height: 54px;
+    margin: 18px auto;
+    background: url("../images/consoult_i1.png") no-repeat;
+}
+.csmiddle .cs_nav .advise>div .fr {
+    width: 54px;
+    height: 54px;
+    margin: 18px auto;
+    background: url("../images/consoult_i3.png") no-repeat;
+}
+.csmiddle .cs_nav .advise>div .cs {
+    font-size: 22px;
+    margin-bottom: 14px;
+}
+.csmiddle .cs_nav .advise>div .time {
+    font-size: 14px;
+}
+.csmiddle .cs_nav .advise>div .state {
+    font-size: 13px;
+    color: #abb0bc;
+}
+.csmiddle .cs_nav .advise>div a {
+    display: inline-block;
+    width: 116px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    color: #0FAE6F;
+    margin: 26px 0 46px 0;
+    border: 1px solid #0FAE6F;
+    border-radius: 5px;
+}
+.csmiddle .cs_nav .advise>div .voice {
+    font-size: 14px;
+    margin: 38px 0 52px 0;
+}
+.csmiddle .cs_nav .advise>div .voice i {
+    font-size: 18px;
+    color: #0FAE6F;
+}
+/*���񵼺�����*/
